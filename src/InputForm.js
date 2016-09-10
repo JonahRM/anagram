@@ -35,7 +35,7 @@ class InputForm extends Component {
 
   getMessage(e) {
     if (this.state.topVal.length === 0 || this.state.bottomVal.length === 0)
-      return "Input two strings to see if they are anagrams!";
+      return "Input 2 strings to see if they are anagrams!";
     else if (areAnagrams(this.state.topVal,this.state.bottomVal))
       return "It is an anagram!";
     else 
