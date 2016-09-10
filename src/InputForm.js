@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { form, FormControl, FormGroup, HelpBlock, ControlLabel } from 'react-bootstrap';
+import { form, FormControl, FormGroup, ControlLabel } from 'react-bootstrap';
 
 
 function areAnagrams(a,b) {
@@ -57,7 +57,7 @@ class InputForm extends Component {
       <div>
         <form onSubmit={this.submit}>
           <FormGroup controlId="formControlsText">
-            <ControlLabel>Word 1</ControlLabel>
+            <ControlLabel className="text-primary">String 1</ControlLabel>
             <FormControl 
               type="text" 
               value={this.state.topVal}
@@ -66,7 +66,7 @@ class InputForm extends Component {
             />
           </FormGroup>
           <FormGroup controlId="formControlsText">
-            <ControlLabel>Word 2</ControlLabel>
+            <ControlLabel className="text-primary">String 2</ControlLabel>
             <FormControl 
               type="text" 
               value={this.state.bottomVal}
@@ -74,8 +74,8 @@ class InputForm extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <HelpBlock>{this.getMessage()}</HelpBlock>
         </form>
+          <h1 className="info text-primary">{this.getMessage()}</h1>
       </div>
     );
   }

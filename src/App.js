@@ -7,13 +7,12 @@ class App extends Component {
     return (
       <div>
       <Grid>
-        <Navbar inverse fixedTop>
+        <Navbar fixedTop>
           <Grid>
             <Navbar.Header>
               <Navbar.Brand>
                 <a href="/">Anagram Check</a>
               </Navbar.Brand>
-              <Navbar.Toggle />
             </Navbar.Header>
           </Grid>   
         </Navbar> 
