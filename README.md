@@ -4,3 +4,5 @@ This project is a web application that allows you to check weather two strings a
 The URL is: [http://anagram.netlify.com/](http://anagram.netlify.com/)
 ## Usage
 The anagram checker ignores case and whitespace. It does not consider two empty strings to be anagrams.
+## Code
+The mojority of the relevant code is in InputForm.js and App.js. I also added a few custom styles in index.css.
